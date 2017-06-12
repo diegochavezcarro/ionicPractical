@@ -13,8 +13,12 @@ export class HomePage {
 
   }
 
+  //onGoToUsers(){
+  //  this.navCtrl.push(UsersPage);
+  //}
   onGoToUsers(){
-    this.navCtrl.push(UsersPage);
+    this.navCtrl.push(this.usrPage).catch((error)=> console.log('Access denied, Argument was ' + error));
   }
 */
+
 }
