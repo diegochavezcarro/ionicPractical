@@ -7,7 +7,8 @@ import { UsersPage } from '../users/users';
   templateUrl: 'home.html'
 })
 export class HomePage {
-
+  usrPage = UsersPage;
+/*
   constructor(public navCtrl: NavController) {
 
   }
@@ -15,5 +16,5 @@ export class HomePage {
   onGoToUsers(){
     this.navCtrl.push(UsersPage);
   }
-
+*/
 }
