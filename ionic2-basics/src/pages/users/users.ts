@@ -30,9 +30,9 @@ export class UsersPage {
     console.log('ionViewDidEnter');
   }
 
-  ionViewCanLeave(): boolean | Promise<boolean> {
+  ionViewCanLeave(): boolean | Promise<void> {
     console.log('ionViewCanLeave');
-    const promise = new Promise((resolve, reject) => {
+    const promise = new Promise<void>((resolve, reject) => {
       setTimeout(() => {
         resolve();
       }, 1000)
